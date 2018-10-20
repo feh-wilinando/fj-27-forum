@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost/forum?createDatabaseIfNotExist=true&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show-sql: true
+        format-sql: true
+        dialect: org.hibernate.dialect.MySQL55Dialect
