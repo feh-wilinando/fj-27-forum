@@ -11,3 +11,7 @@ spring:
         show-sql: true
         format-sql: true
         dialect: org.hibernate.dialect.MySQL55Dialect
+
+forum:
+  cors:
+    origins: "${FORUM_ALLOW_ORIGINS:http://localhost:3000}"
